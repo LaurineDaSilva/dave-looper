@@ -5,8 +5,8 @@ CREATE TABLE t_languages (
 	id serial,
 	code char(5) NOT NULL,
 	"name" varchar(50) NOT NULL,
-	CONSTRAINT t_languages_pkey PRIMARY KEY (id) --,
-	--CONSTRAINT t_languages_code_ukey UNIQUE (code)
+	CONSTRAINT t_languages_pkey PRIMARY KEY (id),
+	CONSTRAINT t_languages_code_ukey UNIQUE (code)
 );
 
 CREATE TABLE t_roles (
